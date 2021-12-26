@@ -1,0 +1,82 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Maven+Pro&family=Press+Start+2P&display=swap");
+
+* {
+  color: white;
+  font-family: Maven Pro;
+}
+#App {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+}
+.box {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 50% 50%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+.setup {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+#break {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-bottom: solid;
+  padding: 20px;
+}
+#time {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  text-align: center;
+  font-size: 30px;
+  border: solid;
+  padding: 30px;
+  border-radius: 20px;
+  width: 250px;
+}
+#timer-label {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.reset-start-stop-flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+#time-left {
+  font-size: 40px;
+}
+#session {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-top: 0;
+}
+.value {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.value, #time-left {
+  user-select: none;
+}
+.arrow-down {
+  grid-row: 2/3;
+}
+.arrow, #start_stop, #reset {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.arrow:hover, #start_stop:hover, #reset:hover  {
+  opacity: 0.5;
+}
+.label {
+  font-size: 30px;
+  font-weight: 600;
+}
